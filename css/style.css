@@ -94,6 +94,10 @@ form {
     gap: .75em;
 }
 
+form * {
+    cursor: pointer;
+}
+
 input#color-picker {
     width: 100%;
     height: 100%;
