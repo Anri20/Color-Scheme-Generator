@@ -21,26 +21,29 @@
 </head>
 
 <body>
-    <div class="mode">
-
+    <div class="slider-container">
+        <span>Light Mode</span>
+        <label class="switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
+        </label>
+        <span>Dark Mode</span>
     </div>
     <div class="content">
         <header>
-            <div class="picker-border">
-                <div class="color-picker">
-
-                </div>
-            </div>
-            <select name="colorTheme" id="color-theme">
-                <option value="Monochrome">Monochrome</option>
-                <option value="Monochrome-dark">Monochrome-dark</option>
-                <option value="Monochrome-light">Monochrome-light</option>
-                <option value="Analogic">Analogic</option>
-                <option value="Complement">Complement</option>
-                <option value="Analogic-complement">Analogic-complement</option>
-                <option value="Triad">Triad</option>
-            </select>
-            <button id="get-scheme">Get color scheme</button>
+            <form action="">
+                <input type="color" name="colorPicker" id="color-picker">
+                <select name="colorMode" id="color-mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="get-scheme" type="submit">Get color scheme</button>
+            </form>
         </header>
         <main>
             <section class="scheme">
