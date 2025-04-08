@@ -1,0 +1,68 @@
+:root {
+    --bg-color: red
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+body,
+button,
+select {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 4px 11px 0px #00000026;
+    padding: 1em 0.5em;
+    gap: .75em;
+}
+
+div.picker-border {
+    background-color: #E5E5E5;
+    border: 0.5px solid #D1D5DB;
+    border-radius: 1px;
+    padding: .25em;
+}
+
+div.color-picker {
+    height: 100%;
+    border: 0.5px solid #313131;
+    background-color: var(--bg-color);
+}
+
+select#color-theme {
+    padding: .5em .75em;
+}
+
+section.scheme,
+section.color-name {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+div.color {
+    height: 50vh;
+    width: 100%;
+}
+
+section.color-name {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 1px black;
+}
+
+div.c-names {
+    font-size: .75rem;
+    text-transform: uppercase;
+}

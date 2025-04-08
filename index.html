@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Title -->
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <div class="mode">
+
+    </div>
+    <div class="content">
+        <header>
+            <div class="picker-border">
+                <div class="color-picker">
+
+                </div>
+            </div>
+            <select name="colorTheme" id="color-theme">
+                <option value="Monochrome">Monochrome</option>
+                <option value="Monochrome-dark">Monochrome-dark</option>
+                <option value="Monochrome-light">Monochrome-light</option>
+                <option value="Analogic">Analogic</option>
+                <option value="Complement">Complement</option>
+                <option value="Analogic-complement">Analogic-complement</option>
+                <option value="Triad">Triad</option>
+            </select>
+            <button id="get-scheme">Get color scheme</button>
+        </header>
+        <main>
+            <section class="scheme">
+
+            </section>
+            <section class="color-name">
+
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
